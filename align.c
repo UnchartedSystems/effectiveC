@@ -11,5 +11,6 @@ int main(void) {
 
   struct S  *bad_s_ptr = (struct S *)bad_buff; // wrong pointer align
   struct S  *good_s_ptr = (struct S *)good_buff; // right pointer align
-
+  printf("%u\n", sizeof(bad_buff));
+  printf("%u\n", sizeof(good_buff));
 }
